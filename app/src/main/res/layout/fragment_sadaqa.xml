@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+	>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+	
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="314dp"
+		android:orientation="vertical"
+		>
+		
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="270dp"
+			android:text="شارك التطبيق لمن تعرف ليصبح ''صدقة جارية'' خاصة بك! بحيث يتناقله آلاف الناس من بعدك!"
+			android:textColor="#fff"
+			android:textStyle="bold"
+			android:textSize="19dp"
+			android:lineSpacingExtra="10dp"
+			android:background="#FF207EEE"
+			android:gravity="bottom|center"
+			android:padding="50dp"
+			android:paddingBottom="40dp"/>
+		
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="صدقة جارية"
+			android:textStyle="bold"
+			android:textSize="25dp"
+			android:textColor="#FFE6F233"
+			android:gravity="center"
+			android:paddingRight="20dp"
+			android:paddingBottom="40dp"
+			android:layout_marginTop="70dp"/>
+		
+		<Button
+			android:id="@+id/fragment_sadaqaButtonShareWhatsApp"
+			android:layout_width="match_parent"
+			android:layout_height="60dp"
+			android:text="شارك مع واتس آب"
+			android:textSize="20dp"
+			android:textStyle="bold"
+			android:textColor="#FF39C608"
+			android:layout_marginTop="250dp"
+			android:layout_marginRight="25dp"
+			android:layout_marginLeft="25dp"
+			android:elevation="20dp"
+			android:gravity="right|center"
+			android:drawablePadding="30dp"
+			android:drawableRight="@drawable/w2"
+			android:background="@drawable/shape_btns_sadaqa_gariah"/>
+		
+	</RelativeLayout>
+	
+				
+		<Button
+			android:id="@+id/fragment_sadaqaButtonCopyHypeirLink"
+			android:layout_width="match_parent"
+			android:layout_height="60dp"
+			android:text="نسخ الرابط للمشاركة"
+			android:textSize="20dp"
+			android:textStyle="bold"
+			android:textColor="#FF9D9D9D" 
+			android:layout_marginTop="20dp"
+			android:layout_marginRight="25dp"
+			android:layout_marginLeft="25dp"
+			android:elevation="20dp"
+			android:gravity="right|center"
+			android:drawablePadding="30dp"
+			android:drawableRight="@drawable/ic_copy2"
+			android:background="@drawable/shape_btns_sadaqa_gariah"/>
+		<Button
+			android:id="@+id/fragment_sadaqaButtonShareFacebook"
+			android:layout_width="match_parent"
+			android:layout_height="60dp"
+			android:text="شارك مع فيسبوك"
+			android:textSize="20dp"
+			android:textStyle="bold"
+			android:textColor="#FF025DD0"
+			android:layout_marginTop="20dp"
+			android:layout_marginRight="25dp"
+			android:layout_marginLeft="25dp"
+			android:elevation="20dp"
+			android:gravity="right|center"
+			android:drawablePadding="30dp"
+			android:drawableRight="@drawable/facebook2"
+			android:background="@drawable/shape_btns_sadaqa_gariah"/>
+		
+		
+		<pl.droidsonroids.gif.GifImageView
+			android:layout_width="match_parent"
+			android:layout_height="100dp"
+			android:src="@drawable/img_gif" 
+			android:layout_gravity="center|bottom"/>
+		</LinearLayout>
+		
+    
+</FrameLayout>

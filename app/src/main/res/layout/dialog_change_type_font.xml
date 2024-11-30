@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+    <LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_marginBottom="10dp">
+	
+		
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="right">
+			<TextView
+				android:id="@+id/dialog_change_type_font_TextView1"
+				android:layout_width="200dp"
+				android:layout_height="40dp"
+				android:textColor="#000000"
+				android:textSize="15dp"
+				android:padding="7dp"
+				android:gravity="center"
+				android:layout_margin="7dp"
+				android:background="@drawable/shape_show_azkar_in_screen"
+				android:text="سبحان الله وبحمده"/>
+			<TextView
+				android:id="@+id/dialog_change_type_font_TextView2"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:textColor="#000000"
+				android:textSize="15dp"
+				android:padding="7dp"
+				android:gravity="center"
+				android:layout_margin="7dp"
+				android:background="@drawable/shape_show_azkar_in_screen"
+				android:text="سبحان الله وبحمده"/>
+			<TextView
+				android:id="@+id/dialog_change_type_font_TextView3"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:textColor="#000000"
+				android:textSize="15dp"
+				android:padding="7dp"
+				android:layout_margin="7dp"
+				android:gravity="center"
+				android:background="@drawable/shape_show_azkar_in_screen"
+				android:text="سبحان الله وبحمده"/>
+		</LinearLayout>
+		
+		
+		
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			>
+			<RadioGroup
+				android:id="@+id/dialog_change_type_font_RadioGroup"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<RadioButton
+					android:id="@+id/dialog_change_type_fontRadioButton1"
+					android:layout_width="wrap_content"
+					android:layout_height="40dp"
+					android:layout_marginTop="7dp"/>
+
+				<RadioButton
+					android:id="@+id/dialog_change_type_fontRadioButton2"
+					android:layout_width="wrap_content"
+					android:layout_height="40dp"
+					android:layout_marginTop="11dp"/>
+ 
+				<RadioButton
+					android:id="@+id/dialog_change_type_fontRadioButton3"
+					android:layout_width="wrap_content"
+					android:layout_height="40dp"
+					android:layout_marginTop="13dp"/>
+
+			</RadioGroup>
+		</LinearLayout>
+		<!--
+			-->
+		
+		
+	</LinearLayout>
+	
+	
+</LinearLayout>

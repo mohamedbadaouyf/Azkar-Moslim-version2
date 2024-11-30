@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+	android:background="#F1F1F1">
+   <FrameLayout
+       android:id="@+id/main_activityFrameLayout"
+	   android:layout_width="match_parent"
+	   android:layout_height="match_parent"
+	   
+       android:layout_weight="20"   /> 
+   
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"  
+        android:gravity="center_vertical"
+        android:elevation="300dp"
+		android:background="@drawable/shape_navigation_btn">
+              
+       
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageButton
+				android:id="@+id/main_activityImageButtonSadaqa"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="fragment_Sadaqa"
+                android:background="@drawable/sad"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+            <ImageButton
+				android:id="@+id/main_activityImageButtonAzkar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="fragment_Azkar"
+                android:background="@drawable/sad"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:gravity="center"  >
+            <ImageButton
+				android:id="@+id/main_activityImageButtonshowAzkar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="fragment_ShowAzkar"
+                android:background="@drawable/sad"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"  >
+            <ImageButton
+				android:id="@+id/main_activityImageButtonMain"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="fragment_Main"
+                android:background="@drawable/sad"/>
+        </LinearLayout>
+        
+        </LinearLayout>
+</LinearLayout>

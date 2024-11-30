@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BFDADADA">
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+      
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="أذكاري"
+            android:id="@+id/fragment_show_btn_azkary"
+            android:onClick="btn_azkary"
+             android:layout_weight="1"
+			android:layout_margin="10dp"
+			 android:textColor="#fff"
+			android:textSize="15dp"
+			android:textStyle="bold"
+			/>
+		
+		<Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="أذكار التطبيق"
+            android:id="@+id/fragment_show_btn_azkar_app"
+            android:onClick="btn_azkar_app"
+            android:layout_weight="1"
+			android:layout_margin="10dp"
+			android:textColor="#fff"
+			android:textSize="15dp"
+			android:textStyle="bold"
+			/>
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="60dp"
+        android:gravity="center">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragment_show_azkarFrameLayout"/>
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:gravity="right">
+		<TextView
+			android:background="@drawable/shape_btn_add_azkar"
+			android:layout_width="50dp"
+            android:layout_height="50dp"
+			android:gravity="center"
+			android:text="+"
+			android:textSize="26dp"
+			android:textColor="#fff"
+			android:layout_marginRight="20dp"
+			android:layout_marginBottom="20dp"
+			android:id="@+id/fragment_show_azkar_txtAddAzkar"/>
+		</LinearLayout>
+		
+    </RelativeLayout>
+   
+        
+        
+    
+    
+</FrameLayout>

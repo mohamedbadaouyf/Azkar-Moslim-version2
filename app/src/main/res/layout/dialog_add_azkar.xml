@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+	
+	
+	
+	
+	<TextView 
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:text="النص"
+		android:textStyle="bold"
+		android:textSize="18dp"
+		android:layout_gravity="right"
+		android:layout_marginTop="10dp"
+		/>
+	
+	<EditText 
+		android:layout_width="match_parent"
+		android:layout_height="100dp"
+		android:id="@+id/dialog_add_azkarEditText"
+		android:background="@drawable/shape_dialog_add_azkar"/>
+	
+    <LinearLayout
+		
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		>
+		
+		<Button 
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+            android:layout_weight="1"
+			android:text="رجوع"
+			android:textStyle="bold"
+			android:textColor="#FFC0BFBF"
+			android:background="@drawable/shape_dialog_add_azkar"
+		    android:id="@+id/dialog_add_azkarBtnBack"
+			android:layout_margin="10dp"/>
+	
+		<Button 
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+            android:layout_weight="1"
+			android:text="حفظ"
+			android:textStyle="bold"
+			android:textColor="#fff"
+			android:background="@drawable/shape_btn_azkary_blue"
+		    android:id="@+id/dialog_add_azkarBtnSave"
+			android:layout_margin="10dp"/>
+		
+	</LinearLayout>
+	
+	
+	<!--	</LinearLayout>
+	</ScrollView>-->
+	
+</LinearLayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+    android:background="#000">
+	
+	
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:background="#fff">
+
+		
+		<LinearLayout 
+			android:layout_width="match_parent"
+			android:layout_height="230dp"
+			android:orientation="vertical"
+			android:background="#FF207EEE"
+			android:id="@+id/fragment_mainLinearLayout">
+			
+			<ImageButton
+				android:layout_width="35dp"
+				android:layout_height="35dp"
+				android:background="@drawable/ic_cog"
+				android:id="@+id/fragment_mainImageButton_settings"
+				android:layout_marginLeft="10dp"
+				android:layout_marginTop="10dp"/>
+				
+				
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="معدل ظهور الأذكار"
+		android:layout_marginTop="20dp"
+		android:gravity="right"
+		android:layout_marginRight="10dp"
+		android:textColor="#fff"
+		android:textSize="26dp"
+		android:textStyle="bold"/>
+		
+	    <LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_marginTop="55dp"
+			android:layout_marginLeft="13dp"
+			android:layout_marginRight="13dp"
+			android:layout_gravity="bottom"
+			android:background="@drawable/shape_repeate_show_azkar">
+			<TextView 
+					android:layout_width="match_parent"
+					android:layout_height="30dp"
+				    android:text="15 دقيقة"
+					android:id="@+id/fragment_mainTextView_15Minute"
+				    android:textColor="#fff"
+				    android:textStyle="bold"
+					android:gravity="center"
+				    android:layout_marginRight="10dp"
+					android:layout_weight="1"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="30dp"
+				android:text="10 دقايق"
+				android:id="@+id/fragment_mainTextView_10Minute"
+				android:textColor="#fff"
+				android:textStyle="bold"
+				android:gravity="center"
+				android:layout_marginRight="10dp"
+				android:layout_weight="1"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="30dp"
+				android:text="5 دقايق"
+				android:id="@+id/fragment_mainTextView_5Minute"
+				android:textColor="#fff"
+				android:textStyle="bold"
+				android:gravity="center"
+				android:layout_marginRight="10dp"
+				android:layout_weight="1"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="30dp"
+				android:text="1 دقيقة"
+				android:id="@+id/fragment_mainTextView_1Minute"
+				android:textColor="#fff"
+				android:textStyle="bold"
+				android:gravity="center"
+				android:layout_weight="1"/>
+			</LinearLayout>
+			
+		</LinearLayout>
+	
+		
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+		   android:orientation="horizontal"
+		   android:layout_marginTop="30dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp">
+		
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="60dp"
+			android:text="أذكار الصباح"
+			android:padding="5dp"
+			android:textColor="#FF665C05"
+			android:textStyle="bold"
+			android:textSize="18dp"
+			android:typeface="serif"
+			android:id="@+id/fragment_mainTextView_azkarSabah"
+			android:background="@drawable/shap_yellowbtn"
+			android:gravity="center"
+			android:layout_weight="1"
+			android:layout_marginRight="10dp"/>
+		
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:text="أذكار المساء"
+				android:textColor="#FF665C05"
+				android:textStyle="bold"
+				android:textSize="18dp"
+				android:typeface="serif"
+				android:id="@+id/fragment_mainTextView_AzkarAlnoom"
+				android:layout_marginLeft="10dp"
+				android:background="@drawable/shap_yellowbtn"
+				android:gravity="center"
+				android:layout_weight="1"/>
+			
+		</LinearLayout> 
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="90dp"
+			android:orientation="horizontal"
+			android:layout_marginTop="30dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:text="أذكار النوم"
+				android:paddingRight="2dp"
+				android:paddingLeft="2dp"
+				android:textColor="#FF665C05"
+				android:textStyle="bold"
+				android:textSize="17dp"
+				android:typeface="serif"
+				android:id="@+id/fragment_mainTextView_azkarEstiqazMinAlnoom"
+				android:background="@drawable/shap_yellowbtn"
+				android:gravity="center"
+				android:layout_weight="1"
+				android:layout_marginTop="0dp"
+				android:padding="0dp"
+				android:layout_marginRight="10dp"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:text="تسبيح"
+				android:textColor="#FF665C05"
+				android:textStyle="bold"
+				android:textSize="18dp"
+				android:typeface="serif"
+				android:id="@+id/fragment_mainTextView_Tasbeeh"
+				android:layout_marginLeft="10dp"
+				android:background="@drawable/shap_yellowbtn"
+				android:gravity="center"
+				android:layout_weight="1"/>
+
+		</LinearLayout>
+		
+		
+		<TextView
+			android:id="@+id/fragment_mainTextView_Aya"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:text="وسبح بحمد ربك قبل طلوع الشمس وقبل الغروب"
+			android:textColor="#FF665C05"
+			android:textStyle="bold"
+			android:textSize="30dp"
+			android:gravity="center"
+			android:paddingTop="0dp"
+			/>
+
+	
+	
+		</LinearLayout>
+		
+	
+</FrameLayout>

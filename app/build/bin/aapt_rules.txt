@@ -1,0 +1,90 @@
+# view AndroidManifest.xml #generated:69
+-keep class com.mohamed_badaouy.azkar_muslim1.Alarm_AzkarMasaa { <init>(...); }
+
+# view AndroidManifest.xml #generated:117
+-keep class com.mohamed_badaouy.azkar_muslim1.Alarm_AzkarMasaaService { <init>(...); }
+
+# view AndroidManifest.xml #generated:72
+-keep class com.mohamed_badaouy.azkar_muslim1.Alarm_AzkarSabah { <init>(...); }
+
+# view AndroidManifest.xml #generated:120
+-keep class com.mohamed_badaouy.azkar_muslim1.Alarm_AzkarSabahService { <init>(...); }
+
+# view AndroidManifest.xml #generated:63
+-keep class com.mohamed_badaouy.azkar_muslim1.Alarm_QiamAllil { <init>(...); }
+
+# view AndroidManifest.xml #generated:66
+-keep class com.mohamed_badaouy.azkar_muslim1.Alarm_SalatMohamed { <init>(...); }
+
+# view AndroidManifest.xml #generated:78
+-keep class com.mohamed_badaouy.azkar_muslim1.Alarm_SetAllAlarms { <init>(...); }
+
+# view AndroidManifest.xml #generated:60
+-keep class com.mohamed_badaouy.azkar_muslim1.Alarm_ShowAzkarInScreen { <init>(...); }
+
+# view AndroidManifest.xml #generated:75
+-keep class com.mohamed_badaouy.azkar_muslim1.Alarm_ZkrAlgomaa { <init>(...); }
+
+# view AndroidManifest.xml #generated:58
+-keep class com.mohamed_badaouy.azkar_muslim1.AzkarAlnoom { <init>(...); }
+
+# view AndroidManifest.xml #generated:39
+-keep class com.mohamed_badaouy.azkar_muslim1.Data_class { <init>(...); }
+
+# view AndroidManifest.xml #generated:102
+-keep class com.mohamed_badaouy.azkar_muslim1.JobServiceClass { <init>(...); }
+
+# view AndroidManifest.xml #generated:46
+-keep class com.mohamed_badaouy.azkar_muslim1.Main_Activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:123
+-keep class com.mohamed_badaouy.azkar_muslim1.MyNotificationListener1 { <init>(...); }
+
+# view AndroidManifest.xml #generated:106
+-keep class com.mohamed_badaouy.azkar_muslim1.MyService { <init>(...); }
+
+# view AndroidManifest.xml #generated:116
+-keep class com.mohamed_badaouy.azkar_muslim1.MyServiceforeground { <init>(...); }
+
+# view AndroidManifest.xml #generated:55
+-keep class com.mohamed_badaouy.azkar_muslim1.ReadZkr { <init>(...); }
+
+# view AndroidManifest.xml #generated:93
+-keep class com.mohamed_badaouy.azkar_muslim1.RunMyServiceAutomatic { <init>(...); }
+
+# view AndroidManifest.xml #generated:57
+-keep class com.mohamed_badaouy.azkar_muslim1.SettingsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:56
+-keep class com.mohamed_badaouy.azkar_muslim1.Tasbeh { <init>(...); }
+
+# view res/layout/fragment_sadaqa.xml #generated:99
+-keep class pl.droidsonroids.gif.GifImageView { <init>(...); }
+
+# onClick res/layout/settings.xml #generated:335
+-keepclassmembers class * { *** abut_devoloper(...); }
+
+# onClick res/layout/fragment_show_azkar.xml #generated:26
+-keepclassmembers class * { *** btn_azkar_app(...); }
+
+# onClick res/layout/fragment_show_azkar.xml #generated:13
+-keepclassmembers class * { *** btn_azkary(...); }
+
+# onClick res/layout/settings.xml #generated:344
+-keepclassmembers class * { *** facebook(...); }
+
+# onClick res/layout/main_activity.xml #generated:42
+-keepclassmembers class * { *** fragment_Azkar(...); }
+
+# onClick res/layout/main_activity.xml #generated:68
+-keepclassmembers class * { *** fragment_Main(...); }
+
+# onClick res/layout/main_activity.xml #generated:29
+-keepclassmembers class * { *** fragment_Sadaqa(...); }
+
+# onClick res/layout/main_activity.xml #generated:55
+-keepclassmembers class * { *** fragment_ShowAzkar(...); }
+
+# onClick res/layout/settings.xml #generated:326
+-keepclassmembers class * { *** whats(...); }
+

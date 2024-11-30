@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#FFDDDDDD">
+    <TextView
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:text="الإعدادات"
+		android:background="#FF2079E8"
+		android:drawablePadding="20dp"
+		android:textColor="#fff"
+		android:textSize="17dp"
+		android:textStyle="bold"
+		android:gravity="center_vertical"
+		android:paddingRight="10dp"
+		android:drawableRight="@drawable/settings"/>
+	
+	
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:background="#FFDDDDDD"
+			android:gravity="center">
+			
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" 
+				android:text="ألاذكار الظاهره على الشاشة"
+				android:textSize="15dp"
+				android:padding="25dp"
+				android:textStyle="bold"
+				android:textColor="#FFB4B4B4"/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:orientation="horizontal"
+				android:layout_marginTop="10dp"
+				android:background="#fff"
+				android:gravity="center_vertical">
+				<Switch
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/settingsSwitchShowAzkarInScreen"
+					android:layout_weight="7"/>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="تفعيل الظهور على الشاشة"
+					android:textStyle="bold"
+					android:paddingRight="10dp"
+					android:textSize="17dp"
+					android:layout_weight="1"/>
+			</LinearLayout>
+			
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:orientation="horizontal"
+				android:layout_marginTop="1dp"
+				android:background="#fff"
+				android:gravity="center_vertical">
+				<TextView
+					android:id="@+id/settingsTextView_change_font"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="تغيير نوع الخط"
+					android:textStyle="bold"
+					android:paddingRight="10dp"
+					android:textSize="17dp"
+					android:layout_weight="1"/>
+			</LinearLayout>
+			
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:orientation="horizontal"
+				android:layout_marginTop="1dp"
+				android:background="#fff"
+				android:gravity="center_vertical">
+				<TextView
+					android:id="@+id/settingsTextView_change_color"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="تغيير اللون"
+					android:textStyle="bold"
+					android:paddingRight="10dp"
+					android:textSize="17dp"
+					android:layout_weight="1"/>
+			</LinearLayout>
+			
+			
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" 
+				android:text="الصلاة على النبي"
+				android:textSize="15dp"
+				android:padding="25dp"
+				android:textStyle="bold"
+				android:textColor="#FFB4B4B4"/>
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:orientation="horizontal"
+		android:layout_marginTop="10dp"
+		android:background="#fff"
+		android:gravity="center_vertical">
+	<Switch
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/settingsSwitch"
+		android:layout_weight="7"/>
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="تفعيل الصلاة على النبي"
+			android:textStyle="bold"
+			android:paddingRight="10dp"
+			android:textSize="17dp"
+			android:layout_weight="1"/>
+	</LinearLayout>
+	
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:orientation="horizontal"
+				android:layout_marginTop="1dp"
+				android:background="#fff"
+				android:gravity="center_vertical">
+				<Switch
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/settingsSwitch_maxSoundSalahAlaAlnapy"
+					android:layout_weight="7"/>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="رفع الصوت عند الصلاة على النبي"
+					android:textStyle="bold"
+					android:paddingRight="10dp"
+					android:textSize="17dp"
+					android:layout_weight="1"/>
+			</LinearLayout>
+	
+             <LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="70dp"
+				android:orientation="horizontal"
+				android:layout_marginTop="1dp"
+				android:background="#fff"
+				android:gravity="center_vertical">
+				<EditText
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:id="@+id/settingsEditTextTimeRepeate"
+					android:background="@drawable/shape_tasbeeh_count"
+					android:layout_weight="3"
+					android:gravity="center"
+					android:padding="10dp"
+					android:textColor="#FF207EEE"
+					android:textSize="16dp"
+					android:textStyle="bold"
+					android:layout_marginLeft="10dp"
+					android:inputType="number"/>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="مدة الصلاة على النبي بالدقيقة"
+					android:textStyle="bold"
+					android:paddingRight="10dp"
+					android:textSize="17dp"
+					android:layout_weight="1"/>
+			</LinearLayout>
+	
+	
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" 
+				android:text="أذكار الصباح والمساء"
+				android:textSize="15dp"
+				android:padding="25dp"
+				android:textStyle="bold"
+				android:textColor="#FFB4B4B4"/>
+			
+			
+			
+			
+			
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:orientation="horizontal"
+				android:layout_marginTop="10dp"
+				android:background="#fff"
+				android:gravity="center_vertical">
+				<Switch
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/settingsSwitchAlarmAzkar"
+					android:layout_weight="7"/>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="تفعيل التنبيهات"
+					android:textStyle="bold"
+					android:paddingRight="10dp"
+					android:textSize="17dp"
+					android:layout_weight="1"/>
+			</LinearLayout>
+			
+			
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="70dp" 
+				android:orientation="horizontal"
+				android:layout_marginTop="1dp"
+				android:background="#fff"
+				android:gravity="center_vertical">
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:id="@+id/settingsTextViewAlarmAzkarSabah"
+					android:background="@drawable/shape_tasbeeh_count"
+					android:layout_weight="3"
+					android:gravity="center"
+					android:padding="5dp"
+					android:text="0:0"
+					android:textSize="16dp"
+					android:textColor="#FF207EEE"
+					android:textStyle="bold"
+					android:layout_marginLeft="10dp"
+					android:inputType="number"/>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="موعد التنبيهات لاذكار الصباح"
+					android:textStyle="bold"
+					android:paddingRight="10dp"
+					android:textSize="17dp"
+					android:layout_weight="1"/>
+			</LinearLayout>
+			
+			
+			 
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="70dp" 
+				android:orientation="horizontal"
+				android:layout_marginTop="1dp"
+				android:background="#fff"
+				android:gravity="center_vertical">
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:id="@+id/settingsTextViewAlarmAzkarMasaa"
+					android:background="@drawable/shape_tasbeeh_count"
+					android:layout_weight="3"
+					android:gravity="center"
+					android:padding="5dp"
+					android:text="0:0"
+					android:textSize="16dp"
+					android:textColor="#FF207EEE"
+					android:textStyle="bold"
+					android:layout_marginLeft="10dp"
+					android:inputType="number"/>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="موعد التنبيهات لاذكار المساء"
+					android:textStyle="bold"
+					android:paddingRight="10dp"
+					android:textSize="17dp"
+					android:layout_weight="1"/>
+			</LinearLayout>
+			
+			
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" 
+				android:text="تابع صفحاتنا على"
+				android:textSize="15dp"
+				android:paddingRight="25dp"
+				android:paddingTop="25dp"
+				android:textStyle="bold"
+				android:textColor="#FFB4B4B4"/>
+			
+			<!--<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent" 
+				android:orientation="horizontal"
+				android:layout_marginTop="50dp"
+				android:gravity="center_horizontal|center_vertical">
+				
+				<TextView
+					android:id="@+id/settingsTextView_WhatsApp"
+					android:layout_width="60dp"
+					android:layout_height="60dp"
+			        android:background="@drawable/w1"
+					android:layout_margin="10dp"/>
+				<TextView
+					android:id="@+id/settingsTextView_facebook"
+					android:layout_width="60dp"
+					android:layout_height="60dp"
+					android:background="@drawable/facebook"
+					android:layout_margin="10dp"/>
+			</LinearLayout>
+			-->
+			
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="horizontal"
+				android:gravity="center_horizontal|center_vertical"
+				android:layout_marginTop="50dp"
+				android:layout_marginBottom="10dp"
+			>
+				<ImageView
+					android:id="@+id/settingsTextView_WhatsApp"
+					android:onClick="whats"
+					android:layout_width="45dp"
+					android:layout_height="45dp"
+					android:src="@drawable/w1"
+					android:layout_marginRight="3dp"
+					android:layout_gravity="center"
+				/>
+				<ImageView
+					android:id="@+id/settingsTextView_abut_devoloper"
+					android:onClick="abut_devoloper"
+					android:layout_width="150dp"
+					android:layout_height="46dp"
+					android:background="@drawable/aboutprogram"
+					android:layout_gravity="center"
+					android:layout_marginRight="3dp"
+				/>
+				<ImageView
+					android:id="@+id/settingsTextView_facebook"
+					android:onClick="facebook"
+					android:layout_width="45dp"
+					android:layout_height="45dp"
+					android:layout_gravity="center"
+					android:src="@drawable/facebook"
+					android:layout_marginRight="3dp"
+
+				/>
+
+			</LinearLayout>	
+			
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:text="اصدار 3.1"
+				android:layout_marginBottom="5dp"/>
+			
+			
+	</LinearLayout>
+	</ScrollView>
+	
+	
+</LinearLayout>

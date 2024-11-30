@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#fff" >
+	
+	<TextView
+		android:id="@+id/fragment_azkarActionBar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="أذكار المسلم"
+		android:textStyle="bold"
+		android:textSize="25dp"
+		android:typeface="serif"
+		android:drawableStart="@drawable/fj"
+		android:drawablePadding="100dp"
+		android:gravity="center_vertical|right"
+		android:textColor="#DDFFFBFB"
+		android:paddingRight="20dp"
+		android:paddingLeft="60dp"
+		android:background="#FF5EA7E6"/>
+	
+	<SearchView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:id="@+id/fragment_azkarSearchView"
+		android:textColor="#fff"
+	    android:queryHint="بحث..."
+		android:searchIcon="@drawable/ic_search"
+		android:queryBackground="@drawable/shape_search_background"
+		android:layout_marginTop="5dp"/>
+	
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center"
+		android:layout_marginTop="50dp">
+		
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_azkarListView"
+       android:layout_marginBottom="10dp" />
+    </LinearLayout>
+</FrameLayout>

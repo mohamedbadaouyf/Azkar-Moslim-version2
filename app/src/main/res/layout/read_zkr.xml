@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#CAEFF0D4"
+	android:id="@+id/read_zkrLinearLayout">
+	
+	<!--<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="0dp"
+		android:layout_margin="0dp">-->
+	<TextView
+		android:id="@+id/read_zkrActionBar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="أذكار المسلم"
+		android:textStyle="bold"
+		android:textSize="25dp"
+		android:typeface="serif"
+		android:drawableLeft="@drawable/intro_2"
+		android:gravity="center_vertical|right"
+		android:textColor="#DDFFFBFB"
+		android:paddingRight="20dp"
+		android:paddingLeft="1dp"
+		android:background="#FFFFB847" 
+		/>
+	
+	
+	<LinearLayout
+		android:id="@+id/read_zkrLinearLayout_settingsZkr"
+		android:layout_width="match_parent"
+        android:layout_height="50dp" 
+		android:orientation="horizontal"
+		android:background="#FFD7D7D7"
+		android:gravity="center_vertical">
+		<ImageButton
+			android:id="@+id/read_zkrImageButton_DarkMode"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:background="@drawable/fj"
+			android:layout_marginRight="15dp"
+			android:layout_marginLeft="10dp"/>
+		<ImageButton
+			android:id="@+id/read_zkrImageButton_min_font"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:background="@drawable/decrease_size"
+			android:layout_marginRight="15dp"
+			/>
+		<ImageButton
+			android:id="@+id/read_zkrImageButton_max_font"
+			android:layout_width="33dp"
+			android:layout_height="33dp"
+			android:background="@drawable/increase_size"
+			android:layout_marginRight="15dp"
+			/>
+		<ImageButton
+			android:id="@+id/read_zkrImageButton_changeTheme"
+			android:layout_width="33dp"
+			android:layout_height="33dp"
+			android:text="change"
+			android:background="@drawable/ic_broom"
+			android:layout_marginRight="10dp"
+		/>
+		
+	</LinearLayout>
+	
+    <LinearLayout
+		android:id="@+id/read_zkrLinearLayout_ListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+		android:layout_marginTop="10dp"
+        android:gravity="center">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/read_zkrListView"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+	<!--</FrameLayout>-->
+</LinearLayout>

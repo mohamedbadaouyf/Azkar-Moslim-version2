@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <LinearLayout
+		android:shadowRadius="50"
+		android:elevation="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+		android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/raw_itm_listview_LinearLayout" 
+        android:layout_marginTop="15dp" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_show_azkar"
+		android:textSize="17dp">
+        
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:id="@+id/raw_itm_listviewCheckBox"/>
+            
+        <TextView
+            android:id="@+id/raw_itm_TextViewZkr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			android:textSize="18dp"
+            android:gravity="right"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+             />
+        </LinearLayout>
+	
+</LinearLayout>

@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+		android:id="@+id/raw_itm_windoTextView"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textColor="#000000"
+		android:textSize="15dp"
+		android:padding="7dp"
+		android:gravity="right"
+		android:background="@drawable/shape_show_azkar_in_screen"
+		/>
+	
+	<!--   shape_tasbeeh_count  --> 
+	
+	<!--   azkar_background2  -->
+</LinearLayout>

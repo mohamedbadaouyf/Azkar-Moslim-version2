@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mohamed_badaouy.azkar_muslim1"
+    android:versionCode="3"
+    android:versionName="3.1" >
+
+    <uses-sdk
+        android:minSdkVersion="20"
+        android:targetSdkVersion="29" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACTION_MANAGE_OVERLAY_PERMISSION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" >
+    </supports-screens>
+
+    <uses-permission android:name="com.AppRocks.now.prayer.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:name="com.mohamed_badaouy.azkar_muslim1.Data_class"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:resizeableActivity="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.mohamed_badaouy.azkar_muslim1.Main_Activity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mohamed_badaouy.azkar_muslim1.ReadZkr" />
+        <activity android:name="com.mohamed_badaouy.azkar_muslim1.Tasbeh" />
+        <activity android:name="com.mohamed_badaouy.azkar_muslim1.SettingsActivity" />
+        <activity android:name="com.mohamed_badaouy.azkar_muslim1.AzkarAlnoom" />
+
+        <receiver
+            android:name="com.mohamed_badaouy.azkar_muslim1.Alarm_ShowAzkarInScreen"
+            android:enabled="true" />
+        <receiver
+            android:name="com.mohamed_badaouy.azkar_muslim1.Alarm_QiamAllil"
+            android:enabled="true" />
+        <receiver
+            android:name="com.mohamed_badaouy.azkar_muslim1.Alarm_SalatMohamed"
+            android:enabled="true" />
+        <receiver
+            android:name="com.mohamed_badaouy.azkar_muslim1.Alarm_AzkarMasaa"
+            android:enabled="true" />
+        <receiver
+            android:name="com.mohamed_badaouy.azkar_muslim1.Alarm_AzkarSabah"
+            android:enabled="true" />
+        <receiver
+            android:name="com.mohamed_badaouy.azkar_muslim1.Alarm_ZkrAlgomaa"
+            android:enabled="true" />
+        <receiver
+            android:name="com.mohamed_badaouy.azkar_muslim1.Alarm_SetAllAlarms"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
+            <intent-filter android:priority="999" >
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.media.VOLUME_CHANGED_ACTION" />
+                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.mohamed_badaouy.azkar_muslim1.RunMyServiceAutomatic"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.mohamed_badaouy.azkar_muslim1.JobServiceClass"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name="com.mohamed_badaouy.azkar_muslim1.MyService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED"
+            android:stopWithTask="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </service>
+        <service android:name="com.mohamed_badaouy.azkar_muslim1.MyServiceforeground" />
+        <service
+            android:name="com.mohamed_badaouy.azkar_muslim1.Alarm_AzkarMasaaService"
+            android:enabled="true" />
+        <service
+            android:name="com.mohamed_badaouy.azkar_muslim1.Alarm_AzkarSabahService"
+            android:enabled="true" />
+        <service
+            android:name="com.mohamed_badaouy.azkar_muslim1.MyNotificationListener1"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
